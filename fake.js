@@ -2,8 +2,7 @@
 
 console.log("Trying to fake the shelljs.which() return value...")
 
-// Here we have to manipulate shelljs.which() somehow
-
+// Manipulate shelljs.which('ruby')
 const shelljs = require('shelljs')
 var original_which = shelljs.which
 var new_which = function(cmd) {
