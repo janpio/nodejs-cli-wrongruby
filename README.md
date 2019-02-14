@@ -16,7 +16,7 @@ Or check out this repository, run `npm install` and then `npm link`.
 Windows:
 
 ```
-You are using the wrong Ruby and are not allowed to see the nice stuff, sorry.
+(Wrong Ruby) You are not allowed to see the nice stuff, sorry.
 ```
 
 All other systems:
