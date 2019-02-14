@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-cli-wrongruby",
+  "version": "0.0.1",
+  "description": "A super small CLI program written with node that doesn't allow users with the wrong ruby (e.g. Windows users) see stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "checkruby": "./index.js",
+    "fakeruby": "./fake.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janpio/nodejs-cli-wrongruby.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janpio/nodejs-cli-wrongruby/issues"
+  },
+  "homepage": "https://github.com/janpio/nodejs-cli-wrongruby#readme",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  }
+}
