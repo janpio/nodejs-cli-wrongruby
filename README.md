@@ -29,4 +29,4 @@ All other systems:
 
 `$ fakeruby`
 
-runs `fake.js` in the same repo - which is where an implementation to let `shelljs.which('ruby')` return the expected `/usr/bin/ruby` could live.
+runs `fake.js` in the same repo - which is where I overwrite `shelljs.which('ruby')` to return the expected `/usr/bin/ruby`. All other parameters return their original value.

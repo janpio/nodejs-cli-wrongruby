@@ -2,6 +2,9 @@
 
 shelljs = require('shelljs')
 
+var which = shelljs.which('which');
+console.log("`which` executable lives at " + which);
+
 var ruby = shelljs.which('ruby');
 
 if (ruby !== '/usr/bin/ruby') {

@@ -5,8 +5,12 @@ console.log("Trying to fake the shelljs.which() return value...")
 // Here we have to manipulate shelljs.which() somehow
 
 const shelljs = require('shelljs')
-var new_which = function() {
-    return "/usr/bin/ruby"
+var original_which = shelljs.which
+var new_which = function(cmd) {
+    if(cmd == 'ruby') {
+        return "/usr/bin/ruby"
+    }
+    return original_which(cmd)
 }
 shelljs.which = new_which
 
